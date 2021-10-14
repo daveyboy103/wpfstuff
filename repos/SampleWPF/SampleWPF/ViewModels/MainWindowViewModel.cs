@@ -2,193 +2,179 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
+using WpfModels.Models;
 
 namespace SampleWPF.ViewModels
 {
     public class MainWindowViewModel : INotifyPropertyChanged
     {
+        public MainWindowViewModel(MainWindowModel data)
+        {
+            this.data = data;
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         public ICommand ApplyCommand { get; set; }
         public ICommand ResetCommand { get; set; }
         public ICommand RefreshCommand { get; set; }
 
-        private string description;
-        private string rawMaterial;
-
         public IEnumerable<string> MaterialTypes { get; }
 
         public string Description
         {
-            get { return description; }
+            get { return data.Description; }
             set
             {
-                description = value;
-                if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(Description)));
+                data.Description = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Description)));
             }
         }
 
         public string Finish
         {
-            get { return finish; }
+            get { return data.Finish; }
             set
             {
-                finish = value;
+                data.Finish = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(Finish)));
             }
         }
 
         public string PurchaseInformation
         {
-            get { return purchaseInformation; }
+            get { return data.PurchaseInformation; }
             set
             {
-                purchaseInformation = value;
+                data.PurchaseInformation = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(PurchaseInformation)));
             }
         }
 
         public string SupplierName
         {
-            get { return supplierName; }
+            get { return data.SupplierName; }
             set
             {
-                supplierName = value;
+                data.SupplierName = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(SupplierName)));
             }
         }
 
         public string SupplierCode
         {
-            get { return supplierCode; }
+            get { return data.SupplierCode; }
             set
             {
-                supplierCode = value;
+                data.SupplierCode = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(SupplierCode)));
             }
         }
 
         public double Length
         {
-            get { return length; }
+            get { return data.Length; }
             set
             {
-                length = value;
+                data.Length = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(Length)));
             }
         }
-
-        public string Status { get; }
-        public string Revision { get; }
-        public string PartNumber { get; }
-
+        public string Status => data.Status;
+        public string Revision => data.Revision;
+        public string PartNumber => data.PartNumber;
         public string RawMaterial
         {
-            get { return rawMaterial; }
+            get { return data.RawMaterial; }
             set
             {
-                rawMaterial = value;
+                data.RawMaterial = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(RawMaterial)));
             }
-        } 
-        
+        }
         public double Mass
         {
-            get { return mass; }
+            get { return data.Mass; }
             set
             {
-                mass = value;
+                data.Mass = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(Mass)));
             }
         }
 
-        private bool weld;
-
         public bool Weld
         {
-            get { return weld; }
+            get { return data.Weld; }
             set
             {
 
-                weld = value;
+                data.Weld = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(Weld)));
             }
         }
 
-        private bool assembly;
-
         public bool Assembly
         {
-            get { return assembly; }
+            get { return data.Assembly; }
             set
             {
 
-                assembly = value;
+                data.Assembly = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(Assembly)));
             }
         }
 
-        private bool plasma;
-
         public bool Plasma
         {
-            get { return plasma; }
+            get { return data.Plasma; }
             set
             {
 
-                plasma = value;
+                data.Plasma = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(Plasma)));
             }
         }
 
-        private bool laser;
-
         public bool Laser
         {
-            get { return laser; }
+            get { return data.Laser; }
             set
             {
 
-                laser = value;
+                data.Laser = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(Laser)));
             }
         }
 
-        private bool purchase;
-
         public bool Purchase
         {
-            get { return purchase; }
+            get { return data.Purchase; }
             set
             {
 
-                purchase = value;
+                data.Purchase = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(Purchase)));
             }
         }
 
-        private bool lathe;
-
         public bool Lathe
         {
-            get { return lathe; }
+            get { return data.Lathe; }
             set
             {
 
-                lathe = value;
+                data.Lathe = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(Lathe)));
             }
         }
 
-        private bool drill;
-
         public bool Drill
         {
-            get { return drill; }
+            get { return data.Drill; }
             set
             {
 
-                drill = value;
+                data.Drill = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(Drill)));
             }
         }
@@ -197,11 +183,11 @@ namespace SampleWPF.ViewModels
 
         public bool Fold
         {
-            get { return fold; }
+            get { return data.Fold; }
             set
             {
 
-                fold = value;
+                data.Fold = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(Fold)));
             }
         }
@@ -210,30 +196,22 @@ namespace SampleWPF.ViewModels
 
         public bool Roll
         {
-            get { return roll; }
+            get { return data.Roll; }
             set
             {
 
-                roll = value;
-                if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(Roll)));
+                data.Roll = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Roll)));
             }
         }
 
-        private bool saw;
-        private double length;
-        private string finish;
-        private string purchaseInformation;
-        private string supplierName;
-        private string supplierCode;
-        private double mass;
-
         public bool Saw
         {
-            get { return saw; }
+            get { return data.Saw; }
             set
             {
 
-                saw = value;
+                data.Saw = value;
                 if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(Saw)));
             }
         }
@@ -250,9 +228,21 @@ namespace SampleWPF.ViewModels
             return false;
         }
 
-        private string notes;
+        private readonly MainWindowModel data;
 
-        public string Notes { get => notes; set => SetProperty(ref notes, value); }
+        public string Notes
+        {
+            get
+            {
+                return data.Notes;
+            }
+            set
+            {
+                data.Notes = value;
+                if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(nameof(Notes)));
 
+            }
+
+        }
     }
 }

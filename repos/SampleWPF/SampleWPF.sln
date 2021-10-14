@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWPF", "SampleWPF\SampleWPF.csproj", "{BB41067C-F68A-4D93-9EFB-9AFA4773C224}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleWPF", "SampleWPF\SampleWPF.csproj", "{BB41067C-F68A-4D93-9EFB-9AFA4773C224}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleRestAPI", "SampleRestAPI\SampleRestAPI.csproj", "{278C2DB4-7178-4E19-A483-0E1E97CE27C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfModels", "WpfModels\WpfModels.csproj", "{65A05BB7-97E4-4694-B24D-88B2BC69BDE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{BB41067C-F68A-4D93-9EFB-9AFA4773C224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB41067C-F68A-4D93-9EFB-9AFA4773C224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB41067C-F68A-4D93-9EFB-9AFA4773C224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{278C2DB4-7178-4E19-A483-0E1E97CE27C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278C2DB4-7178-4E19-A483-0E1E97CE27C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278C2DB4-7178-4E19-A483-0E1E97CE27C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278C2DB4-7178-4E19-A483-0E1E97CE27C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A05BB7-97E4-4694-B24D-88B2BC69BDE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A05BB7-97E4-4694-B24D-88B2BC69BDE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A05BB7-97E4-4694-B24D-88B2BC69BDE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A05BB7-97E4-4694-B24D-88B2BC69BDE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {}
+    "net5.0-windows7.0": {
+      "WpfModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/WpfModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WpfModels.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "WpfModels/1.0.0": {
+      "type": "project",
+      "path": "../WpfModels/WpfModels.csproj",
+      "msbuildProject": "../WpfModels/WpfModels.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": []
+    "net5.0-windows7.0": [
+      "WpfModels >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\dharr\\.nuget\\packages\\": {},
@@ -37,7 +56,11 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\dharr\\source\\repos\\SampleWPF\\WpfModels\\WpfModels.csproj": {
+              "projectPath": "C:\\Users\\dharr\\source\\repos\\SampleWPF\\WpfModels\\WpfModels.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
