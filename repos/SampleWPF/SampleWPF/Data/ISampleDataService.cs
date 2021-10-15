@@ -6,7 +6,7 @@ namespace SampleWPF.Data
 {
     public interface ISampleDataService
     {
-        Task<MainWindow> Get(int id);
+        MainWindowModel Get(int id);
         void Apply(MainWindowModel model);
     }
 }

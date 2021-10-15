@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using SampleWPF.Commands;
+using SampleWPF.Data;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
@@ -8,9 +10,12 @@ namespace SampleWPF.ViewModels
 {
     public class MainWindowViewModel : INotifyPropertyChanged
     {
+        private RoutedCommand applyCommand = new RoutedCommand();
         public MainWindowViewModel(MainWindowModel data)
         {
             this.data = data;
+            var cmd = new ApplyCommand(data);
+            ApplyCommand = cmd;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

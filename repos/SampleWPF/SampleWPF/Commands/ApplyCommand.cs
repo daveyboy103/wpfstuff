@@ -12,18 +12,25 @@ namespace SampleWPF.Commands
     public class ApplyCommand : ICommand
     {
         private readonly ISampleDataService sampleDataService;
+        private readonly MainWindowModel model;
 
-        public ApplyCommand(ISampleDataService sampleDataService)
+        public ApplyCommand(MainWindowModel model)
         {
-            if (sampleDataService is null)
-            {
-                throw new ArgumentNullException(nameof(sampleDataService));
-            }
-
-            this.sampleDataService = sampleDataService;
+            this.sampleDataService = new SampleDataService();
+            this.model = model;
         }
 
-        public event EventHandler CanExecuteChanged;
+        public event EventHandler CanExecuteChanged
+        {
+            add
+            {
+                CommandManager.RequerySuggested += value;
+            }
+            remove
+            {
+                CommandManager.RequerySuggested -= value;
+            }
+        }
 
         public bool CanExecute(object parameter)
         {
@@ -32,7 +39,7 @@ namespace SampleWPF.Commands
 
         public void Execute(object parameter)
         {
-            sampleDataService.Apply(parameter as MainWindowModel);
+            sampleDataService.Apply(model);
         }
     }
 }

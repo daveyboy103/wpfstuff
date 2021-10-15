@@ -16,17 +16,19 @@ namespace SampleWPF.Data
             };
 
             //await webClient.PostFromJsonAsync("/WpfTest/Apply", new HttpContent();
-            await webClient.PutAsJsonAsync("/WpfTest/Apply", model);
+            await webClient.PutAsJsonAsync("api/Wpf/WpfTest/Apply", model);
         }
 
-        public async Task<MainWindow> Get(int id)
+        public  MainWindowModel Get(int id)
         {
             var webClient = new HttpClient
             {
                 BaseAddress = new Uri("https://localhost:44342/")
             };
 
-            return await webClient.GetFromJsonAsync<MainWindow>($"/WpfTest?id={id}");
+            var ret = webClient.GetFromJsonAsync<MainWindowModel>($"api/Wpf/WpfTest?id={id}");
+
+            return ret.Result;
         }
     }
 }

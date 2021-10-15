@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "SampleWPF/1.0.0": {
+        "dependencies": {
+          "WpfModels": "1.0.0"
+        },
         "runtime": {
           "SampleWPF.dll": {}
+        }
+      },
+      "WpfModels/1.0.0": {
+        "runtime": {
+          "WpfModels.dll": {}
         }
       }
     }
   },
   "libraries": {
     "SampleWPF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WpfModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -10,7 +10,7 @@ namespace SampleRestAPI.Controllers
     [ApiController]
     public class WpfController : ControllerBase
     {
-        [HttpGet("/WpfTest")]
+        [HttpGet("WpfTest")]
         public async Task<ActionResult<MainWindowModel>> GetTest(int id)
         {
             MainWindowModel ret = null;
@@ -86,7 +86,7 @@ namespace SampleRestAPI.Controllers
         [HttpPut("WpfTest/Apply")]
         public async Task<ActionResult> Apply(MainWindowModel model)
         {
-            await Task.Factory.StartNew(() => Console.WriteLine("Applied");
+            await Task.Factory.StartNew(() => Console.WriteLine("Applied"));
             return Ok();
         }
     }

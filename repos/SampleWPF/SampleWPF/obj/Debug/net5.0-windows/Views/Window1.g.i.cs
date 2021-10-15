@@ -85,7 +85,7 @@ namespace SampleWPF.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SampleWPF;V1.0.0.0;component/views/window1.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SampleWPF;component/views/window1.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\Window1.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

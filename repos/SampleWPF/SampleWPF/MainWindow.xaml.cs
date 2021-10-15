@@ -1,5 +1,8 @@
-﻿using SampleWPF.ViewModels;
+﻿using SampleWPF.Data;
+using SampleWPF.ViewModels;
+using System.Threading.Tasks;
 using System.Windows;
+using WpfModels.Models;
 
 namespace SampleWPF
 {
@@ -11,10 +14,13 @@ namespace SampleWPF
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainWindowViewModel
-            {
-                Description = "This is bound"
-            };
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            var service = new SampleDataService();
+            var item = service.Get(1);
+            DataContext = new MainWindowViewModel(item);
         }
     }
 }
