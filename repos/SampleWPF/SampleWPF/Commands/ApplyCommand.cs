@@ -1,4 +1,5 @@
 ﻿using SampleWPF.Data;
+using SampleWPF.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +13,12 @@ namespace SampleWPF.Commands
     public class ApplyCommand : ICommand
     {
         private readonly ISampleDataService sampleDataService;
-        private readonly MainWindowModel model;
+        private readonly MainWindowViewModel viewModel;
 
-        public ApplyCommand(MainWindowModel model)
+        public ApplyCommand(MainWindowViewModel model)
         {
             this.sampleDataService = new SampleDataService();
-            this.model = model;
+            this.viewModel = model;
         }
 
         public event EventHandler CanExecuteChanged
@@ -34,12 +35,12 @@ namespace SampleWPF.Commands
 
         public bool CanExecute(object parameter)
         {
-            return true;
+            return viewModel.Description.Length > 0;
         }
 
         public void Execute(object parameter)
         {
-            sampleDataService.Apply(model);
+            sampleDataService.Apply(viewModel.Model);
         }
     }
 }

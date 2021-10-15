@@ -14,9 +14,11 @@ namespace SampleWPF.ViewModels
         public MainWindowViewModel(MainWindowModel data)
         {
             this.data = data;
-            var cmd = new ApplyCommand(data);
+            var cmd = new ApplyCommand(this);
             ApplyCommand = cmd;
         }
+
+        public MainWindowModel Model => data;
 
         public event PropertyChangedEventHandler PropertyChanged;
 

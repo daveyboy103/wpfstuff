@@ -25,7 +25,7 @@
                 </Grid>
                 <TextBlock Margin="3 10 0 0" Text="Pulse Properties" FontWeight="Bold"></TextBlock>
                 <TextBlock Margin="3 10 0 5" Text="Description" ></TextBlock>
-                <TextBox Margin="3 0 5 0" Padding="2" Text="{Binding Description}"></TextBox>
+                <TextBox Margin="3 0 5 0" Padding="2" Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="2*"/>
