@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Threading.Tasks;
 using WpfModels.Models;
@@ -86,7 +87,7 @@ namespace SampleRestAPI.Controllers
         [HttpPut("WpfTest/Apply")]
         public async Task<ActionResult> Apply(MainWindowModel model)
         {
-            await Task.Factory.StartNew(() => Console.WriteLine("Applied"));
+            await Task.Factory.StartNew(() => Console.WriteLine($"Applied: {model.Description}"));
             return Ok();
         }
     }

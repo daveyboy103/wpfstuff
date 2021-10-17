@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Net.Http;
 using System.Net.Http.Json;
-using System.Threading.Tasks;
 using WpfModels.Models;
 
 namespace SampleWPF.Data
 {
     public class SampleDataService : ISampleDataService
     {
+        private const string UriString = "https://localhost:5001/";
+
         public async void Apply(MainWindowModel model)
         {
             var webClient = new HttpClient
             {
-                BaseAddress = new Uri("https://localhost:44342/")
+                BaseAddress = new Uri(UriString)
             };
 
             //await webClient.PostFromJsonAsync("/WpfTest/Apply", new HttpContent();
@@ -23,7 +24,7 @@ namespace SampleWPF.Data
         {
             var webClient = new HttpClient
             {
-                BaseAddress = new Uri("https://localhost:5001/")
+                BaseAddress = new Uri(UriString)
             };
 
             var ret = webClient.GetFromJsonAsync<MainWindowModel>($"api/Wpf/WpfTest?id={id}");

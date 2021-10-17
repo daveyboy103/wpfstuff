@@ -4,22 +4,10 @@
              xmlns:local="clr-namespace:SampleWPF"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <Style x:Key="ButtonStyle-Red">
-            <Style.Setters>
-                <Setter Property="Button.Margin" Value="0 0 5 0"/>
-                <Setter Property="Button.BorderBrush" Value="IndianRed"/>
-            </Style.Setters>
-        </Style>
-        <Style x:Key="TextBlock-Bold">
-            <Style.Setters>
-                <Setter Property="TextBlock.Margin" Value="3 10 0 0"/>
-                <Setter Property="TextBlock.FontWeight" Value="Bold"/>
-            </Style.Setters>
-        </Style>        
-        <Style x:Key="TextBlock-Normal">
-            <Style.Setters>
-                <Setter Property="TextBlock.Margin" Value="3 10 0 5"/>
-            </Style.Setters>
-        </Style>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="resources\mainresources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

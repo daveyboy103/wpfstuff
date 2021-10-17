@@ -7,7 +7,6 @@ C:\Users\dharr\source\repos\SampleWPF\TestConsole\bin\Debug\net5.0\ref\TestConso
 C:\Users\dharr\source\repos\SampleWPF\TestConsole\bin\Debug\net5.0\TestConsole.pdb
 C:\Users\dharr\source\repos\SampleWPF\TestConsole\bin\Debug\net5.0\WpfModels.dll
 C:\Users\dharr\source\repos\SampleWPF\TestConsole\bin\Debug\net5.0\WpfModels.pdb
-C:\Users\dharr\source\repos\SampleWPF\TestConsole\obj\Debug\net5.0\TestConsole.csproj.AssemblyReference.cache
 C:\Users\dharr\source\repos\SampleWPF\TestConsole\obj\Debug\net5.0\TestConsole.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\dharr\source\repos\SampleWPF\TestConsole\obj\Debug\net5.0\TestConsole.AssemblyInfoInputs.cache
 C:\Users\dharr\source\repos\SampleWPF\TestConsole\obj\Debug\net5.0\TestConsole.AssemblyInfo.cs
@@ -16,3 +15,4 @@ C:\Users\dharr\source\repos\SampleWPF\TestConsole\obj\Debug\net5.0\TestConsole.d
 C:\Users\dharr\source\repos\SampleWPF\TestConsole\obj\Debug\net5.0\ref\TestConsole.dll
 C:\Users\dharr\source\repos\SampleWPF\TestConsole\obj\Debug\net5.0\TestConsole.pdb
 C:\Users\dharr\source\repos\SampleWPF\TestConsole\obj\Debug\net5.0\TestConsole.genruntimeconfig.cache
+C:\Users\dharr\source\repos\SampleWPF\TestConsole\obj\Debug\net5.0\TestConsole.csproj.CopyComplete

@@ -2,7 +2,6 @@ C:\Users\dharr\source\repos\SampleWPF\WpfModels\bin\Debug\net5.0\WpfModels.deps.
 C:\Users\dharr\source\repos\SampleWPF\WpfModels\bin\Debug\net5.0\WpfModels.dll
 C:\Users\dharr\source\repos\SampleWPF\WpfModels\bin\Debug\net5.0\ref\WpfModels.dll
 C:\Users\dharr\source\repos\SampleWPF\WpfModels\bin\Debug\net5.0\WpfModels.pdb
-C:\Users\dharr\source\repos\SampleWPF\WpfModels\obj\Debug\net5.0\WpfModels.csproj.AssemblyReference.cache
 C:\Users\dharr\source\repos\SampleWPF\WpfModels\obj\Debug\net5.0\WpfModels.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\dharr\source\repos\SampleWPF\WpfModels\obj\Debug\net5.0\WpfModels.AssemblyInfoInputs.cache
 C:\Users\dharr\source\repos\SampleWPF\WpfModels\obj\Debug\net5.0\WpfModels.AssemblyInfo.cs
@@ -10,3 +9,4 @@ C:\Users\dharr\source\repos\SampleWPF\WpfModels\obj\Debug\net5.0\WpfModels.cspro
 C:\Users\dharr\source\repos\SampleWPF\WpfModels\obj\Debug\net5.0\WpfModels.dll
 C:\Users\dharr\source\repos\SampleWPF\WpfModels\obj\Debug\net5.0\ref\WpfModels.dll
 C:\Users\dharr\source\repos\SampleWPF\WpfModels\obj\Debug\net5.0\WpfModels.pdb
+C:\Users\dharr\source\repos\SampleWPF\WpfModels\obj\Debug\net5.0\WpfModels.csproj.AssemblyReference.cache

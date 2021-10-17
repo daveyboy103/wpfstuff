@@ -25,3 +25,10 @@ C:\Users\dharr\source\repos\SampleWPF\SampleWPF\obj\Debug\net5.0-windows\SampleW
 C:\Users\dharr\source\repos\SampleWPF\SampleWPF\bin\Debug\net5.0-windows\WpfModels.dll
 C:\Users\dharr\source\repos\SampleWPF\SampleWPF\bin\Debug\net5.0-windows\WpfModels.pdb
 C:\Users\dharr\source\repos\SampleWPF\SampleWPF\obj\Debug\net5.0-windows\App.baml
+C:\Users\dharr\source\repos\SampleWPF\SampleWPF\obj\Debug\net5.0-windows\Resources\MainResources.baml
+C:\Users\dharr\source\repos\SampleWPF\SampleWPF\obj\Debug\net5.0-windows\Controls\LoginControl.g.cs
+C:\Users\dharr\source\repos\SampleWPF\SampleWPF\obj\Debug\net5.0-windows\Controls\LoginControl.baml
+C:\Users\dharr\source\repos\SampleWPF\SampleWPF\obj\Debug\net5.0-windows\SampleWPF.csproj.CopyComplete
+C:\Users\dharr\source\repos\SampleWPF\SampleWPF\obj\Debug\net5.0-windows\ControlHost.g.cs
+C:\Users\dharr\source\repos\SampleWPF\SampleWPF\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\dharr\source\repos\SampleWPF\SampleWPF\obj\Debug\net5.0-windows\ControlHost.baml
