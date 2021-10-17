@@ -19,7 +19,7 @@ namespace SampleWPF
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             var service = new SampleDataService();
-            var item = service.Get(1);
+            var item = service.Get(2);
             DataContext = new MainWindowViewModel(item);
         }
     }

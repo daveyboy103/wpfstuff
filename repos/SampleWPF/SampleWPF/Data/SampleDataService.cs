@@ -23,7 +23,7 @@ namespace SampleWPF.Data
         {
             var webClient = new HttpClient
             {
-                BaseAddress = new Uri("https://localhost:44342/")
+                BaseAddress = new Uri("https://localhost:5001/")
             };
 
             var ret = webClient.GetFromJsonAsync<MainWindowModel>($"api/Wpf/WpfTest?id={id}");

@@ -28,3 +28,4 @@ C:\Users\dharr\source\repos\SampleWPF\SampleRestAPI\obj\Debug\net5.0\SampleRestA
 C:\Users\dharr\source\repos\SampleWPF\SampleRestAPI\obj\Debug\net5.0\ref\SampleRestAPI.dll
 C:\Users\dharr\source\repos\SampleWPF\SampleRestAPI\obj\Debug\net5.0\SampleRestAPI.pdb
 C:\Users\dharr\source\repos\SampleWPF\SampleRestAPI\obj\Debug\net5.0\SampleRestAPI.genruntimeconfig.cache
+C:\Users\dharr\source\repos\SampleWPF\SampleRestAPI\obj\Debug\net5.0\SampleRestAPI.csproj.CopyComplete

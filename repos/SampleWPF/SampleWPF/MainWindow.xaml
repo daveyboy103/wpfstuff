@@ -11,7 +11,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Border Padding="10" BorderThickness="2">
+        <Border Padding="10" BorderThickness="12,2,2,2">
             <StackPanel>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -19,13 +19,13 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Button Margin="0 0 5 0" Content="Apply" Grid.Column="0" Command="{Binding ApplyCommand }"/>
+                    <Button Style="{StaticResource ButtonStyle-Red}" Content="Apply" Grid.Column="0" Command="{Binding ApplyCommand }"/>
                     <Button Margin="5 0 5 0" Content="Reset" Grid.Column="1" Command="{Binding ResetCommand}"/>
                     <Button Margin="5 0 0 0" Content="Refresh" Grid.Column="2" Command="{Binding RefreshCommand}"/>
                 </Grid>
-                <TextBlock Margin="3 10 0 0" Text="Pulse Properties" FontWeight="Bold"></TextBlock>
-                <TextBlock Margin="3 10 0 5" Text="Description" ></TextBlock>
-                <TextBox Margin="3 0 5 0" Padding="2" Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                <TextBlock Style="{StaticResource TextBlock-Bold}"  Text="Pulse Properties"/>
+                <TextBlock Style="{StaticResource TextBlock-Normal}"  Text="Description" />
+                <TextBox Margin="3 0 5 0" Padding="2" Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}"/>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="2*"/>
@@ -35,18 +35,18 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <TextBlock Margin="3 10 0 5" Grid.Column="0" Grid.Row="0" Text="Status" ></TextBlock>
-                    <TextBlock Margin="5 10 0 5" Grid.Column="1" Grid.Row="0" Text="Revision" ></TextBlock>
-                    <TextBox IsReadOnly="True" Padding="2" Margin="3 0 5 0" Grid.Column="0"  Grid.Row="1" Text="{Binding Status, Mode=OneWay}"></TextBox>
-                    <TextBox Padding="2" Margin="5 0 5 0" Grid.Column="1" Grid.Row="1" Text="{Binding Revision, Mode=OneWay}"></TextBox>
+                    <TextBlock Style="{StaticResource TextBlock-Normal}" Grid.Column="0" Grid.Row="0" Text="Status" />
+                    <TextBlock Style="{StaticResource TextBlock-Normal}" Grid.Column="1" Grid.Row="0" Text="Revision" />
+                    <TextBox IsReadOnly="True" Padding="2" Margin="3 0 5 0" Grid.Column="0"  Grid.Row="1" Text="{Binding Status, Mode=OneWay}"/>
+                    <TextBox Padding="2" Margin="5 0 5 0" Grid.Column="1" Grid.Row="1" Text="{Binding Revision, Mode=OneWay}"/>
                 </Grid>
-                <TextBlock Margin="3 10 0 5" Text="Part Number" ></TextBlock>
-                <TextBox Margin="3 0 5 0" Padding="2" Text="{Binding PartNumber, Mode=OneWay}"></TextBox>
-                <TextBlock Margin="3 10 0 0" Text="Raw Material" FontWeight="Bold"></TextBlock>
-                <TextBlock Margin="3 10 0 3" Text="Material" ></TextBlock>
-                <ComboBox SelectedItem="{Binding RawMaterial}" Margin="3 0 5 0" ItemsSource="{Binding MaterialTypes}" ></ComboBox>
-                <TextBlock Margin="3 10 0 3" Text="Manufacturing Information" FontWeight="Bold"></TextBlock>
-                <TextBlock Margin="3 10 0 3" Text="Work Centres" ></TextBlock>
+                <TextBlock Margin="3 10 0 5" Text="Part Number" />
+                <TextBox Margin="3 0 5 0" Padding="2" Text="{Binding PartNumber, Mode=OneWay}"/>
+                <TextBlock Style="{StaticResource TextBlock-Bold}" Text="Raw Material"/>
+                <TextBlock Margin="3 10 0 3" Text="Material" />
+                <ComboBox SelectedItem="{Binding RawMaterial}" Margin="3 0 5 0" ItemsSource="{Binding MaterialTypes}" />
+                <TextBlock Margin="3 10 0 3" Text="Manufacturing Information" FontWeight="Bold"/>
+                <TextBlock Margin="3 10 0 3" Text="Work Centres" />
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -129,26 +129,26 @@
                     </StackPanel>
                 </Grid>
                 <TextBlock Margin="3 10 0 3" Text="Length" />
-                <TextBox Text="{Binding Length}" Margin="3 0 5 0"  Padding="2"></TextBox>
+                <TextBox Text="{Binding Length}" Margin="3 0 5 0"  Padding="2"/>
                 <TextBlock Margin="3 10 0 3" Text="Mass" />
-                <TextBox Text="{Binding Mass}" Background="#FFE7E8EC" IsReadOnly="True" Margin="3 0 5 0"  Padding="2"></TextBox>
-                <TextBlock Margin="3 10 0 3" Text="Finish" ></TextBlock>
+                <TextBox Text="{Binding Mass}" Background="#FFE7E8EC" IsReadOnly="True" Margin="3 0 5 0"  Padding="2"/>
+                <TextBlock Margin="3 10 0 3" Text="Finish" />
                 <ComboBox SelectedItem="{Binding Finish}" Margin="3 0 5 0">
                     <ComboBoxItem Content="Painted"/>
                     <ComboBoxItem Content="Bare Metal"/>
                 </ComboBox>
-                <TextBlock Margin="3 10 0 3" Text="Purchase Information" ></TextBlock>
+                <TextBlock Margin="3 10 0 3" Text="Purchase Information" />
                 <ComboBox SelectedItem="{Binding PurchaseInformation}" Margin="3 0 5 0">
                     <ComboBoxItem Content="Account"/>
                     <ComboBoxItem Content="Cash"/>
                 </ComboBox>
                 <TextBlock Margin="3 10 0 3" Text="Supplier Name" />
-                <TextBox Text="{Binding SupplierName}" Margin="3 0 5 0"  Padding="2"></TextBox>
+                <TextBox Text="{Binding SupplierName}" Margin="3 0 5 0"  Padding="2"/>
                 <TextBlock Margin="3 10 0 3" Text="Supplier Code" />
-                <TextBox Text="{Binding SupplierCode}" Margin="3 0 5 0"  Padding="2"></TextBox>
+                <TextBox Text="{Binding SupplierCode}" Margin="3 0 5 0"  Padding="2"/>
                 <TextBlock FontWeight="Bold" Margin="3 10 0 3" Text="Additional Info" />
                 <TextBlock Margin="3 10 0 3" Text="Notes" />
-                <TextBox Text="{Binding Notes}" TextWrapping="WrapWithOverflow" Height="75" Margin="3 0 5 0"  Padding="2"></TextBox>
+                <TextBox Text="{Binding Notes}" TextWrapping="WrapWithOverflow" Height="75" Margin="3 0 5 0"  Padding="2"/>
             </StackPanel>
         </Border>
     </Grid>
